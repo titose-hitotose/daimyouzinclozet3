@@ -1,11 +1,7 @@
 {
     "variants": {
         "facing=north": { "model": "daimyouzinclozet3:katura01"},
-<<<<<<< HEAD
-        "facing=south": { "model": "daimyouzinclozet3:katura01", "y": 180},
-=======
         "facing=south": { "model": "daimyouzinclozet3:katura011", "y": 180},
->>>>>>> branch 'master' of git@github.com:titose-hitotose/daimyouzinclozet3.git
         "facing=west":  { "model": "daimyouzinclozet3:katura01", "y": 270},
         "facing=east":  { "model": "daimyouzinclozet3:katura01", "y": 90}
     }
