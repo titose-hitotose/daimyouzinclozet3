@@ -11,11 +11,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
-<<<<<<< HEAD
+
 public class ClientProxy extends CommonProxy{
-=======
-public class ClientProxy {
->>>>>>> branch 'master' of git@github.com:titose-hitotose/daimyouzinclozet3.git
 
 	public static boolean rendering = false;
 	public static Entity renderEntity = null;
