@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "daimyouzinclozet3:katura06"},
+        "facing=south": { "model": "daimyouzinclozet3:katura06", "y": 180},
+        "facing=west":  { "model": "daimyouzinclozet3:katura06", "y": 270},
+        "facing=east":  { "model": "daimyouzinclozet3:katura06", "y": 90}
+    }
+}
