@@ -1,6 +1,10 @@
 version:1343
 invertYMouse:false
+<<<<<<< HEAD
 mouseSensitivity:0
+=======
+mouseSensitivity:0.5
+>>>>>>> branch 'master' of git@github.com:titose-hitotose/daimyouzinclozet3.git
 fov:0.0
 gamma:0.0
 saturation:0.0

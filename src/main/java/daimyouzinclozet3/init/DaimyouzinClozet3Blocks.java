@@ -8,6 +8,7 @@ import daimyouzinclozet3.init.block.Katura02;
 import daimyouzinclozet3.init.block.Katura03;
 import daimyouzinclozet3.init.block.Katura04;
 import daimyouzinclozet3.init.block.Katura05;
+<<<<<<< HEAD
 import daimyouzinclozet3.init.block.Katura06;
 import daimyouzinclozet3.main.Reference;
 import net.minecraft.block.Block;
@@ -88,6 +89,82 @@ public class DaimyouzinClozet3Blocks {
     	 registerRender(katura04);
     	 registerRender(katura05);
     	 registerRender(katura06);
+=======
+import daimyouzinclozet3.main.Reference;
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+public class DaimyouzinClozet3Blocks {
+
+	public static Block katura01;
+	public static Block katura02;
+	public static Block katura03;
+	public static Block katura04;
+	public static Block katura05;
+
+
+
+	 /* ブロックのインスタンスを生成 Instantiate blocks. */
+    public static void init() {
+
+    	 katura01 = new Katura01().setRegistryName("katura01")
+         		.setUnlocalizedName("katura01").setCreativeTab(DaimyouzinClozet3Tabs.kabureru);
+    	 katura02 = new Katura02().setRegistryName("katura02")
+          		.setUnlocalizedName("katura02").setCreativeTab(DaimyouzinClozet3Tabs.kabureru);
+    	 katura03 = new Katura03().setRegistryName("katura03")
+           		.setUnlocalizedName("katura03").setCreativeTab(DaimyouzinClozet3Tabs.kabureru);
+    	 katura04 = new Katura04().setRegistryName("katura04")
+            		.setUnlocalizedName("katura04").setCreativeTab(DaimyouzinClozet3Tabs.kabureru);
+    	 katura05 = new Katura05().setRegistryName("katura05")
+         		.setUnlocalizedName("katura05").setCreativeTab(DaimyouzinClozet3Tabs.kabureru);
+
+    }
+
+    /* ブロックを登録する、ここから Register Blocks. From here. ↓*/
+    public static void register() {
+
+    	 registerBlock(katura01,new ItemBlock_DC3_EquipeHead(katura01));
+    	 registerBlock(katura02,new ItemBlock_DC3_EquipeHead(katura02));
+    	 registerBlock(katura03,new ItemBlock_DC3_EquipeHead(katura03));
+    	 registerBlock(katura04,new ItemBlock_DC3_EquipeHead(katura04));
+    	 registerBlock(katura05,new ItemBlock_DC3_EquipeHead(katura05));
+
+
+
+    }
+
+    /** ブロックの登録 Register Blocks. **/
+    public static void registerBlockNotItem(Block block) {
+        registerBlock(block, new ItemBlock(block));
+    }
+
+    /** アイテムブロックの登録 Register ItemBlocks. **/
+    public static void registerBlock(Block block, ItemBlock item) {
+        RegistrationHandler.BLOCKS.add(block);
+        item.setRegistryName(block.getRegistryName());
+        DaimyouzinClozet3Items.RegistrationHandler.ITEMS.add(item);
+    }
+
+    /*ここまで So far↑ */
+
+    /* ドロップ時やインベントリにおける、アイテムブロックの描画を登録。ここから↓
+     * Register rendering of ItemBlocks in drop and inventory. From here↓*/
+     public static void registerRenders() {
+
+    	 registerRender(katura01);
+    	 registerRender(katura02);
+    	 registerRender(katura03);
+    	 registerRender(katura04);
+    	 registerRender(katura05);
+>>>>>>> branch 'master' of git@github.com:titose-hitotose/daimyouzinclozet3.git
      }
 
 

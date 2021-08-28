@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"credit": "Made with Blockbench",
 	"textures": {
@@ -172,4 +173,8 @@
 			"translation": [0, -0.5, -1.25]
 		}
 	}
+=======
+{
+  "parent": "daimyouzinclozet3:block/katura03"
+>>>>>>> branch 'master' of git@github.com:titose-hitotose/daimyouzinclozet3.git
 }
